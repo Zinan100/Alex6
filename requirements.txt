@@ -1,5 +1,6 @@
 git+https://github.com/ROCKY-AUTO-FILTERS/pyrogram@inline-m
 enums
+pytz
 tgcrypto==1.2.2
 pymongo[srv]==3.11.4
 motor==2.4.0
