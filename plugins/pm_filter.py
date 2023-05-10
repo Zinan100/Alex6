@@ -783,30 +783,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons =  [[
-
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ yᴏᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
-
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
-
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/fschats'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Zinan100pbot')
             ],[      
-
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-
-            ],[
-
-            InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
-
-            InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
-
-            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
-
-        ]]     
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about') 
+        ]]          
         reply_markup = InlineKeyboardMarkup(buttons)
         R1 = await query.message.reply_text("⍟⍟⍟")
         await asyncio.sleep(0.3)
@@ -952,7 +936,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/Rafeed_T')
+            InlineKeyboardButton('♥️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ♥️', url='https://t.me/Zinan100pbot')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
