@@ -38,18 +38,14 @@ async def start(client, message):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
-        buttons = [[
+        buttons =  [[
             InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ yᴏᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/fschats'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Zinan100pbot')
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-            InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
-            InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
-            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about') 
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -84,17 +80,13 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons =  [[
-            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀᴇ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ yᴏᴜʀᴇ ʏᴏᴜʀ ɢʀᴏᴜᴩ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/movieclub5588'),
-            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Rafeed_T')
+            InlineKeyboardButton('ɢʀᴏᴜᴘ', url='https://t.me/fschats'),
+            InlineKeyboardButton('ᴏᴡɴᴇʀ', url='https://t.me/Zinan100pbot')
             ],[      
             InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
-            ],[
-            InlineKeyboardButton('ɪɴsᴛᴀɢʀᴀᴍ', url='https://instagram.com/_r_a_f_e_e_d_?igshid=NTc4MTIwNjQ2YQ=='), 
-            InlineKeyboardButton('ᴡʜᴀᴛsᴀᴘᴘ', url='https://chat.whatsapp.com/KjZDgqpMR5B7wNn20ABumk'), 
-            InlineKeyboardButton('yᴏᴜᴛᴜʙᴇ', url='https://youtube.com/@MovieClubYt')
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about') 
         ]]     
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
