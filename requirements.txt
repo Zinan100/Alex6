@@ -8,8 +8,7 @@ marshmallow==3.12.2
 python-telegram-bot==11.1.0
 umongo==3.0.0
 requests
-bs4
-_version_
+BS4
 functools
 imdbpy
 youtube-dl
