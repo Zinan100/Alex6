@@ -10,6 +10,7 @@ umongo==3.0.0
 requests
 bs4
 _version_
+functools
 imdbpy
 youtube-dl
 youtube_search
